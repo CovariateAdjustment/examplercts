@@ -41,6 +41,26 @@ library(examplercts)
 
 ## Datasets:
 
+Datasets are from various different aspects of medical research, and
+contain continuous, binary, ordinal, and time-to-event outcomes. Some
+outcomes are assessed at a single point in time, while others are
+assessed longitudinally. An overview of the outcome types in each
+dataset is provided below.
+
+| Dataset           | Continuous | Binary | Ordinal | Time-to-Event | Longitudinal |
+|:------------------|:-----------|:-------|:--------|:--------------|:-------------|
+| `strep_tb`        | ☐          | ☑      | ☑       | ☐             | ☐            |
+| `indo_rct`        | ☐          | ☑      | ☐       | ☐             | ☐            |
+| `botox_dystonia`  | ☑          | ☐      | ☐       | ☐             | ☑            |
+| `laryngoscope`    | ☑          | ☑      | ☑       | ☑             | ☐            |
+| `licorice_gargle` | ☑          | ☑      | ☑       | ☐             | ☑            |
+| `supraclavicular` | ☑          | ☑      | ☑       | ☑             | ☐            |
+| `perio_pregnancy` | ☑          | ☑      | ☑       | ☐             | ☑            |
+| `colon_cancer`    | ☐          | ☐      | ☐       | ☑             | ☐            |
+| `lung_cancer`     | ☐          | ☐      | ☐       | ☑             | ☐            |
+
+**Table 1.** Types of outcomes in the `examplercts` package by dataset.
+
 ### `strep_tb`: Streptomycin for Tuberculosis
 
 This is a randomized controlled trial of 107 individuals, evaluating the
