@@ -109,6 +109,7 @@ This is a randomized controlled trial, enrolling between 1984 to 1987, comparing
 
 This is a randomized controlled trial conducted by the Veteran's Administration Lung Cancer group, comparing survival among `r nrow(lung_cancer)` participants randomized to two treatment regimens. This data was sourced from the [survival package](`r url_survival`) [@survival], and is referenced in statistical publications and books [@Kalbfleisch2002; @Prentice1973], however there is no reference listed to the primary publication of this trial.
 
+<<<<<<< HEAD
 
 
 

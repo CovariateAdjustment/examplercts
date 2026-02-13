@@ -123,6 +123,8 @@ package](https://cran.r-project.org/web/packages/survival/index.html)
 (Kalbfleisch and Prentice 2002; Prentice 1973), however there is no
 reference listed to the primary publication of this trial.
 
+\<\<\<\<\<\<\< HEAD
+
 ------------------------------------------------------------------------
 
 ## References
