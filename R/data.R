@@ -302,7 +302,7 @@
 #' https://github.com/higgi13425/medicaldata.
 #' 
 #' @format ## `perio_pregnancy`
-#' A data frame with 823 rows and 23 columns: 
+#' A data frame with 823 rows and 25 columns: 
 #' \describe{
 #' \item{participant_id}{Participant ID}
 #' \item{age_bl}{Mother's Age (BL)}
@@ -324,6 +324,8 @@
 #' \item{tx}{Treatment Indicator}
 #' \item{birth_outcome}{Birth Outcome}
 #' \item{birthweight}{Birthweight at Outcome}
+#' \item{low_birthweight}{Low Birthweight (<2500 g)}
+#' \item{birthweight_category}{Birthweight Category}
 #' \item{gestational_age}{Gestational Age at Outcome}
 #' \item{apgar_1_min}{Apgar (1m)}
 #' \item{apgar_5_min}{Apgar (5m)}

@@ -119,7 +119,14 @@ perio_pregnancy <-
         Group == "0. Control (Exams)" ~ 0,
         Group == "1. Treatment (Therapy)" ~ 1,
       ),
-
+    low_birthweight = 1*(Birthweight < 2500),
+    birthweight_category =
+      dplyr::case_when(
+        Birthweight < 1500 ~ "1. Very Low Birthweight",
+        Birthweight < 2500 ~ "2. Low Birthweight",
+        Birthweight >= 2500 ~ "3. Normal Birthweight",
+      ) %>%
+      factor()
   ) %>%
   dplyr::select(
     participant_id = PID,
@@ -142,6 +149,8 @@ perio_pregnancy <-
     tx,
     birth_outcome = Birth.outcome,
     birthweight = Birthweight,
+    low_birthweight,
+    birthweight_category,
     gestational_age = GA.at.outcome,
     apgar_1_min = Apgar1,
     apgar_5_min = Apgar5
@@ -167,6 +176,8 @@ labelled::var_label(perio_pregnancy$arm) <- "Study Arm"
 labelled::var_label(perio_pregnancy$tx) <- "Treatment Indicator"
 labelled::var_label(perio_pregnancy$birth_outcome) <- "Birth Outcome"
 labelled::var_label(perio_pregnancy$birthweight) <- "Birthweight at Outcome"
+labelled::var_label(perio_pregnancy$low_birthweight) <- "Low Birthweight (<2500 g)"
+labelled::var_label(perio_pregnancy$birthweight_category) <- "Birthweight Category"
 labelled::var_label(perio_pregnancy$gestational_age) <- "Gestational Age at Outcome"
 labelled::var_label(perio_pregnancy$apgar_1_min) <- "Apgar (1m)"
 labelled::var_label(perio_pregnancy$apgar_5_min) <- "Apgar (5m)"
