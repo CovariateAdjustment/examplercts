@@ -1,5 +1,7 @@
 ---
 output: github_document
+bibliography:
+  - "../../github_pages/covariateadjustment.github.io/book.bib"
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -11,6 +13,11 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+```
+
+```{r URLs, echo = FALSE}
+url_medicaldata <- "https://github.com/higgi13425/medicaldata"
+url_survival <- "https://cran.r-project.org/web/packages/survival/index.html"
 ```
 
 # `examplercts`: Analysis-Ready Example Data from Randomized Controlled Trials
@@ -26,9 +33,75 @@ The goal of `examplercts` is to facilitate teaching by providing annotated, labe
 
 You can install the development version of examplercts from [GitHub](https://github.com/) with:
 
-``` r
+```{r Installation, eval = FALSE}
+## Method 1: Using `pak`
 # install.packages("pak")
 pak::pak("CovariateAdjustment/example_rcts")
+
+## Method 2: Using `devtools`
+# install.packages("devtools")
+devtools::install_github(repo ="CovariateAdjustment/example_rcts")
 ```
 
+Once installed, load the package, and the datasets are available for use:
+
+```{r Load-Package, eval = TRUE, echo = TRUE}
+library(examplercts)
+```
+
+
+## Datasets:
+
+### `strep_tb`: Streptomycin for Tuberculosis
+
+This is a randomized controlled trial of `r nrow(strep_tb)` individuals, evaluating the efficacy of streptomycin for pulmonary tuberculosis, conducted in 1947 [@strep-tb]. Participants were randomized to receive streptomycin and bed rest (treatment) or bed rest alone (control), and followed up after six months. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+This dataset contains binary and ordinal outcome variables.
+
+
+
+
+### `indo_rct`: Indomethicin vs. Placebo for Post-ERCP Pancreatitis (PEP)
+
+This is a randomized controlled trial conducted from 2009 to 2011 of `r nrow(indo_rct)` individuals, evaluating the efficacy of indomethicin for prevention of Post-ERCP Pancreatitis [@indo-rct]. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+This dataset contains a binary outcome variable.
+
+
+
+
+### `botox_dystonia`: Botulinium Toxin B vs. Placebo for Cervical Dystonia
+
+This is a randomized controlled trial conducted from 2009 to 2011 of `r nrow(botox_dystonia)` individuals, evaluating the efficacy of botulinium toxin B for cervical dystonia [@cdystonia]. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+
+
+### `laryngoscope`: Macintosh vs. Pentax Laryngoscope for Orotracheal Intubation
+
+This is a randomized controlled trial of `r nrow(laryngoscope)` individuals, evaluating the relative efficacy of two laryngoscope models for orotracheal intubation in obese patients [@laryngoscope]. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+
+### `licorice_gargle`: Licorice Gargle vs. Sucrose for Endotracheal Intubation
+
+This is a randomized controlled trial, conducted from 2010 to 2011, evaluating whether a licorice or sucrose gargle provided better management of endotracheal tube extubation symptoms in `r nrow(licorice_gargle)` participants [@licorice-gargle]. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+
+### `supraclavicular`: Combined vs. Sequential Administration of Supraclavicular Anaesthesia
+
+This is a randomized controlled trial evaluating whether sequential or combined anesthesia provided superior onset and duration of anaesthesia in `r nrow(supraclavicular)` participants [@supraclavicular]. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+
+### `perio_pregnancy`: Maternal Periodontal Therapy vs. Oral Exams for Preterm Birth
+
+This is a randomized controlled trial, conducted from 1984 to 2005, evaluating whether maternal periodontic treatment  `r nrow(perio_pregnancy)` participants [@perio-pregnancy]. This data was sourced from the [medicaldata package](`r url_medicaldata`) [@medicaldata].
+
+
+### `colon_cancer`: 5-FU vs. Levamisole for Colon Cancer
+
+This is a randomized controlled trial, enrolling between 1984 to 1987, comparing survival and cancer recurrence among `r nrow(colon_cancer)` participants randomized to 5-Fluorouracil + levamisole, levamisole alone, or observation [@colon-cancer]. This data was sourced from the [survival package](`r url_survival`) [@survival].
+
+
+### `lung_cancer`: Veteran's Administration Lung Cancer Trial
+
+This is a randomized controlled trial conducted by the Veteran's Administration Lung Cancer group, comparing survival among `r nrow(lung_cancer)` participants randomized to two treatment regimens. This data was sourced from the [survival package](`r url_survival`) [@survival], and is referenced in statistical publications and books [@Kalbfleisch2002; @Prentice1973], however there is no reference listed to the primary publication of this trial.
 
