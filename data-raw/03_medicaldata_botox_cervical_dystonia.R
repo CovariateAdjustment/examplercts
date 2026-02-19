@@ -47,7 +47,8 @@ cdystonia <-
   ) %>%
   as.data.frame() %>%
   dplyr::select(
-    participant_id = id, site, week, age, sex, arm = treat, tx, twstrs
+    participant_id = id, site, week,
+    age_bl = age, sex, arm = treat, tx, twstrs
   )
 
 # Ensure each ID has a record at each study visit
@@ -61,7 +62,7 @@ botox_dystonia <-
             week == 0
           ) %>%
           dplyr::select(
-            participant_id, site, age, sex, arm, tx, twstrs_bl = twstrs
+            participant_id, site, age_bl, sex, arm, tx, twstrs_bl = twstrs
           ),
         week = c(2, 4, 8, 12, 16)
       ),
@@ -77,7 +78,7 @@ botox_dystonia <-
 
 labelled::var_label(botox_dystonia$participant_id) <- "Participant ID"
 labelled::var_label(botox_dystonia$site) <- "Site ID"
-labelled::var_label(botox_dystonia$age) <- "Age at Baseline"
+labelled::var_label(botox_dystonia$age_bl) <- "Age at Baseline (BL)"
 labelled::var_label(botox_dystonia$sex) <- "Sex"
 labelled::var_label(botox_dystonia$arm) <- "Study Arm"
 labelled::var_label(botox_dystonia$tx) <- "Treatment Indicator"

@@ -71,7 +71,7 @@ Note: the license applies only to the R code and documentation used to curate th
 
 ## Installation
 
-You can install the development version of examplercts from [GitHub](https://github.com/) with:
+You can install the `examplercts` package from [GitHub](https://github.com/) with:
 
 ```{r Installation, eval = FALSE}
 ## Method 1: Using `pak`
@@ -92,7 +92,7 @@ library(examplercts)
 
 ## Datasets:
 
-Datasets are from various different aspects of medical research, and contain continuous, binary, ordinal, and time-to-event outcomes. Some outcomes are assessed at a single point in time, while others are assessed longitudinally. An overview of the outcome types in each dataset is provided below.
+Datasets are from various different aspects of medical research, and contain continuous, binary, ordinal, and time-to-event outcomes. Some outcomes are assessed at a single point in time, while others are assessed longitudinally. An overview of the outcome types in each dataset is provided in the table below.
 
 ```{r Print-Data-Description-Table, echo = FALSE}
 knitr::kable(

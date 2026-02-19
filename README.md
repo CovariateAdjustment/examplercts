@@ -19,7 +19,7 @@ curate the datasets.
 
 ## Installation
 
-You can install the development version of examplercts from
+You can install the `examplercts` package from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -45,7 +45,7 @@ Datasets are from various different aspects of medical research, and
 contain continuous, binary, ordinal, and time-to-event outcomes. Some
 outcomes are assessed at a single point in time, while others are
 assessed longitudinally. An overview of the outcome types in each
-dataset is provided below.
+dataset is provided in the table below.
 
 | Dataset           | Continuous | Binary | Ordinal | Time-to-Event | Longitudinal |
 |:------------------|:-----------|:-------|:--------|:--------------|:-------------|

@@ -112,7 +112,7 @@
 #' \describe{
 #' \item{participant_id}{Participant ID}
 #' \item{site}{Site ID}
-#' \item{age}{Age at Baseline}
+#' \item{age_bl}{Age at Baseline (BL)}
 #' \item{sex}{Sex}
 #' \item{arm}{Study Arm}
 #' \item{tx}{Treatment Indicator}
