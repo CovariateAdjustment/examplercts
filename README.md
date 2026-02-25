@@ -29,7 +29,7 @@ pak::pak("CovariateAdjustment/example_rcts")
 
 ## Method 2: Using `devtools`
 # install.packages("devtools")
-devtools::install_github(repo ="CovariateAdjustment/example_rcts")
+devtools::install_github(repo = "CovariateAdjustment/example_rcts")
 ```
 
 Once installed, load the package, and the datasets are available for

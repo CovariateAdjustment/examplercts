@@ -68,12 +68,23 @@ strep_tb <-
         levels = c("no", "yes"),
         labels = c("0. No", "1. Yes")
       ),
+
+    strep_resistance_6m =
+      substr(
+        x = as.character(strep_resistance),
+        start = 1,
+        stop = 1
+      ) %>%
+      as.numeric(),
+
     strep_resistance =
       factor(
         x = strep_resistance,
         levels = c("1_sens_0-8", "2_mod_8-99", "3_resist_100+"),
         labels = c("1. 0-8: Sensitive", "2. 8-99: Moderate", "3. 100+: Resistant")
       ),
+
+
     radiologic_6m =
       factor(
         x = radiologic_6m,
@@ -84,6 +95,8 @@ strep_tb <-
                    "3. Moderate Deterioration", "4. No Change",
                    "5. Moderate Improvement", "6. Considerable Improvement")
       ),
+    rad_num =
+      factor(x = rad_num),
 
     improved_factor =
       factor(
@@ -99,9 +112,10 @@ strep_tb <-
     temperature_bl = baseline_temp,
     sed_rate_esr_bl = baseline_esr,
     cxr_lung_cavitation_bl = baseline_cavitation,
-    strep_resistance_6m = strep_resistance,
-    radiologic_outcome_6m = radiologic_6m,
-    chest_xray_rating_6m = rad_num,
+    strep_resistance_6m,
+    strep_resistance_f_6m = strep_resistance,
+    radiologic_outcome_6m = rad_num,
+    radiologic_outcome_f_6m = radiologic_6m,
     radiologic_improvement_6m = improved,
     radiologic_improvement_f_6m = improved_factor
   )
@@ -114,10 +128,11 @@ labelled::var_label(strep_tb$condition_bl) <- "Condition (BL)"
 labelled::var_label(strep_tb$temperature_bl) <- "Temperature  (BL)"
 labelled::var_label(strep_tb$sed_rate_esr_bl) <- "ESR: Sedimentation Rate (BL)"
 labelled::var_label(strep_tb$cxr_lung_cavitation_bl) <- "Lung Cavitation on X-Ray (BL)"
-labelled::var_label(strep_tb$strep_resistance_6m) <- "Strep Resistance (6M)"
-labelled::var_label(strep_tb$radiologic_outcome_6m) <- "Radiologic Outcome (6M)"
-labelled::var_label(strep_tb$chest_xray_rating_6m) <- "Chest X-Ray Numeric Rating (6M)"
-labelled::var_label(strep_tb$radiologic_improvement_6m) <- "Radiologic Improvement (6M)"
+labelled::var_label(strep_tb$strep_resistance_6m) <- "Strep Resistance - Numeric (6M)"
+labelled::var_label(strep_tb$strep_resistance_f_6m) <- "Strep Resistance (6M)"
+labelled::var_label(strep_tb$radiologic_outcome_6m) <- "Radiologic Outcome - Numeric(6M)"
+labelled::var_label(strep_tb$radiologic_outcome_f_6m) <- "Radiologic Outcome (6M)"
+labelled::var_label(strep_tb$radiologic_improvement_6m) <- "Radiologic Improvement - Binary (6M)"
 labelled::var_label(strep_tb$radiologic_improvement_f_6m) <- "Radiologic Improvement (6M)"
 
 data <- strep_tb <- as.data.frame(strep_tb)
