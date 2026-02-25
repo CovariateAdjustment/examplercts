@@ -95,8 +95,7 @@ strep_tb <-
                    "3. Moderate Deterioration", "4. No Change",
                    "5. Moderate Improvement", "6. Considerable Improvement")
       ),
-    rad_num =
-      factor(x = rad_num),
+    rad_num = rad_num,
 
     improved_factor =
       factor(
