@@ -85,6 +85,9 @@ strep_tb <-
                    "5. Moderate Improvement", "6. Considerable Improvement")
       ),
 
+    chest_xray_rating_f_6m =
+      factor(x = rad_num),
+
     improved_factor =
       factor(
         x = improved,
@@ -102,6 +105,7 @@ strep_tb <-
     strep_resistance_6m = strep_resistance,
     radiologic_outcome_6m = radiologic_6m,
     chest_xray_rating_6m = rad_num,
+    chest_xray_rating_f_6m,
     radiologic_improvement_6m = improved,
     radiologic_improvement_f_6m = improved_factor
   )
@@ -117,6 +121,7 @@ labelled::var_label(strep_tb$cxr_lung_cavitation_bl) <- "Lung Cavitation on X-Ra
 labelled::var_label(strep_tb$strep_resistance_6m) <- "Strep Resistance (6M)"
 labelled::var_label(strep_tb$radiologic_outcome_6m) <- "Radiologic Outcome (6M)"
 labelled::var_label(strep_tb$chest_xray_rating_6m) <- "Chest X-Ray Numeric Rating (6M)"
+labelled::var_label(strep_tb$chest_xray_rating_f_6m) <- "Chest X-Ray Numeric Rating (6M)"
 labelled::var_label(strep_tb$radiologic_improvement_6m) <- "Radiologic Improvement (6M)"
 labelled::var_label(strep_tb$radiologic_improvement_f_6m) <- "Radiologic Improvement (6M)"
 

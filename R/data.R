@@ -17,7 +17,7 @@
 #' https://github.com/higgi13425/medicaldata.
 #' 
 #' @format ## `strep_tb`
-#' A data frame with 107 rows and 13 columns: 
+#' A data frame with 107 rows and 14 columns: 
 #' \describe{
 #' \item{patient_id}{Participant ID}
 #' \item{arm}{Study Arm}
@@ -30,6 +30,7 @@
 #' \item{strep_resistance_6m}{Strep Resistance (6M)}
 #' \item{radiologic_outcome_6m}{Radiologic Outcome (6M)}
 #' \item{chest_xray_rating_6m}{Chest X-Ray Numeric Rating (6M)}
+#' \item{chest_xray_rating_f_6m}{Chest X-Ray Numeric Rating (6M)}
 #' \item{radiologic_improvement_6m}{Radiologic Improvement (6M)}
 #' \item{radiologic_improvement_f_6m}{Radiologic Improvement (6M)}
 #' }
