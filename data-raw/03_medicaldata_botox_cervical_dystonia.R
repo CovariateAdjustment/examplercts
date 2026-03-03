@@ -43,7 +43,7 @@ cdystonia <-
         treat == "0. Placebo" ~ 0,
         treat == "1. 5000U" ~ 1,
         treat == "2. 10000U" ~ 1,
-      ),
+      )
   ) %>%
   as.data.frame() %>%
   dplyr::select(
@@ -65,6 +65,13 @@ botox_dystonia <-
             participant_id, site, age_bl, sex, arm, tx, twstrs_bl = twstrs
           ),
         week = c(2, 4, 8, 12, 16)
+      ) %>%
+      dplyr::mutate(
+        week_f =
+          factor(
+            x = week,
+            levels = c(2, 4, 8, 12, 16)
+          )
       ),
     y =
       cdystonia %>%
@@ -84,6 +91,7 @@ labelled::var_label(botox_dystonia$arm) <- "Study Arm"
 labelled::var_label(botox_dystonia$tx) <- "Treatment Indicator"
 labelled::var_label(botox_dystonia$twstrs_bl) <- "TWSTRS Total Score (BL)"
 labelled::var_label(botox_dystonia$week) <- "Week Post Randomization"
+labelled::var_label(botox_dystonia$week_f) <- "Week Post Randomization"
 labelled::var_label(botox_dystonia$twstrs) <- "TWSTRS Total Score - Followup"
 
 data <- botox_dystonia <- as.data.frame(botox_dystonia)

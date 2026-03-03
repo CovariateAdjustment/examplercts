@@ -79,7 +79,7 @@ laryngoscope <-
       factor(
         x = view,
         levels = c(0, 1),
-        labels = c("0. Grade 1-2 (Not Good)", "0. Grade 3-4 (Good)")
+        labels = c("0. Grade 1-2 (Not Good)", "1. Grade 3-4 (Good)")
       )
   ) %>%
   dplyr::select(

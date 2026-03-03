@@ -109,7 +109,7 @@
 #' https://github.com/higgi13425/medicaldata.
 #' 
 #' @format ## `botox_dystonia`
-#' A data frame with 545 rows and 9 columns: 
+#' A data frame with 545 rows and 10 columns: 
 #' \describe{
 #' \item{participant_id}{Participant ID}
 #' \item{site}{Site ID}
@@ -119,6 +119,7 @@
 #' \item{tx}{Treatment Indicator}
 #' \item{twstrs_bl}{TWSTRS Total Score (BL)}
 #' \item{week}{Week Post Randomization}
+#' \item{week_f}{Week Post Randomization}
 #' \item{twstrs}{TWSTRS Total Score - Followup}
 #' }
 #' @source <https://github.com/higgi13425/medicaldata>
