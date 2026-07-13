@@ -60,6 +60,7 @@ examplercts_data <-
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/CovariateAdjustment/example_rcts/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CovariateAdjustment/example_rcts/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21341111.svg)](https://doi.org/10.5281/zenodo.21341111)
 <!-- badges: end -->
 
 The goal of `examplercts` is to facilitate teaching by providing annotated, labelled, and documented datasets from randomized controlled trials. These datasets have been sourced from existing R packages. This repo is meant to provide both analysis-ready data and the code used to produce that data.

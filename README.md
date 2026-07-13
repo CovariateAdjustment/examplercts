@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/CovariateAdjustment/example_rcts/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CovariateAdjustment/example_rcts/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21341111.svg)](https://doi.org/10.5281/zenodo.21341111)
 <!-- badges: end -->
 
 The goal of `examplercts` is to facilitate teaching by providing
@@ -147,8 +148,7 @@ reference listed to the primary publication of this trial.
 
 ## References
 
-<div id="refs" class="references csl-bib-body hanging-indent"
-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-laryngoscope" class="csl-entry">
 
@@ -162,17 +162,16 @@ Obese Patients.” *Anesthesia & Analgesia* 113 (5): 1082–87.
 
 <div id="ref-cdystonia" class="csl-entry">
 
-Brashear, A., M. F. Lew, D. D. Dykstra, C. L. Comella, S. A. Factor, R.
-L. Rodnitzky, R. Trosch, et al. 1999. “Safety and Efficacy of NeuroBloc
-(Botulinum Toxin Type b) in Type a–Responsive Cervical Dystonia.”
-*Neurology* 53 (7): 1439–39. <https://doi.org/10.1212/wnl.53.7.1439>.
+Brashear, A., M. F. Lew, D. D. Dykstra, et al. 1999. “Safety and
+Efficacy of NeuroBloc (Botulinum Toxin Type b) in Type a–Responsive
+Cervical Dystonia.” *Neurology* 53 (7): 1439–39.
+<https://doi.org/10.1212/wnl.53.7.1439>.
 
 </div>
 
 <div id="ref-indo-rct" class="csl-entry">
 
-Elmunzer, B. Joseph, James M. Scheiman, Glen A. Lehman, Amitabh Chak,
-Patrick Mosler, Peter D. R. Higgins, Rodney A. Hayward, et al. 2012. “A
+Elmunzer, B. Joseph, James M. Scheiman, Glen A. Lehman, et al. 2012. “A
 Randomized Trial of Rectal Indomethacin to Prevent Post-ERCP
 Pancreatitis.” *New England Journal of Medicine* 366 (15): 1414–22.
 <https://doi.org/10.1056/nejmoa1111103>.
@@ -189,34 +188,32 @@ Higgins, Peter. 2022. *Medicaldata: Data Package for Medical Datasets*.
 <div id="ref-Kalbfleisch2002" class="csl-entry">
 
 Kalbfleisch, John D., and Ross L. Prentice. 2002. *The Statistical
-Analysis of Failure Time Data*. *Wiley Series in Probability and
+Analysis of Failure Time Data*. In *Wiley Series in Probability and
 Statistics*. Wiley. <https://doi.org/10.1002/9781118032985>.
 
 </div>
 
 <div id="ref-colon-cancer" class="csl-entry">
 
-Laurie, J A, C G Moertel, T R Fleming, H S Wieand, J E Leigh, J Rubin, G
-W McCormack, J B Gerstner, J E Krook, and J Malliard. 1989. “Surgical
-Adjuvant Therapy of Large-Bowel Carcinoma: An Evaluation of Levamisole
-and the Combination of Levamisole and Fluorouracil. The North Central
-Cancer Treatment Group and the Mayo Clinic.” *Journal of Clinical
-Oncology* 7 (10): 1447–56. <https://doi.org/10.1200/jco.1989.7.10.1447>.
+Laurie, J A, C G Moertel, T R Fleming, et al. 1989. “Surgical Adjuvant
+Therapy of Large-Bowel Carcinoma: An Evaluation of Levamisole and the
+Combination of Levamisole and Fluorouracil. The North Central Cancer
+Treatment Group and the Mayo Clinic.” *Journal of Clinical Oncology* 7
+(10): 1447–56. <https://doi.org/10.1200/jco.1989.7.10.1447>.
 
 </div>
 
 <div id="ref-strep-tb" class="csl-entry">
 
 Medical Research Council. 1998. “Streptomycin Treatment of Pulmonary
-Tuberculosis.” Edited by British Medical Journal Publishing Group. *BMJ*
-317 (7167): 1248. <https://doi.org/10.1136/bmj.317.7167.1248b>.
+Tuberculosis.” *BMJ* 317 (7167): 1248.
+<https://doi.org/10.1136/bmj.317.7167.1248b>.
 
 </div>
 
 <div id="ref-perio-pregnancy" class="csl-entry">
 
-Michalowicz, Bryan S., James S. Hodges, Anthony J. DiAngelis, Virginia
-R. Lupo, M. John Novak, James E. Ferguson, William Buchanan, et al.
+Michalowicz, Bryan S., James S. Hodges, Anthony J. DiAngelis, et al.
 2006. “Treatment of Periodontal Disease and the Risk of Preterm Birth.”
 *New England Journal of Medicine* 355 (18): 1885–94.
 <https://doi.org/10.1056/nejmoa062249>.
@@ -243,8 +240,7 @@ of Mepivacaine and Ropivacaine for Supraclavicular Nerve Blocks.”
 
 <div id="ref-licorice-gargle" class="csl-entry">
 
-Ruetzler, Kurt, Michael Fleck, Sabine Nabecker, Kristina Pinter, Gordian
-Landskron, Andrea Lassnigg, Jing You, and Daniel I. Sessler. 2013. “A
+Ruetzler, Kurt, Michael Fleck, Sabine Nabecker, et al. 2013. “A
 Randomized, Double-Blind Comparison of Licorice Versus Sugar-Water
 Gargle for Prevention of Postoperative Sore Throat and Postextubation
 Coughing.” *Anesthesia & Analgesia* 117 (3): 614–21.
