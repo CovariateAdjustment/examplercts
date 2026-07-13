@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{strep_tb}}{
 
-A data frame with 107 rows and 13 columns:
+A data frame with 107 rows and 14 columns:
 \describe{
 \item{patient_id}{Participant ID}
 \item{arm}{Study Arm}
@@ -17,10 +17,11 @@ A data frame with 107 rows and 13 columns:
 \item{temperature_bl}{Temperature  (BL)}
 \item{sed_rate_esr_bl}{ESR: Sedimentation Rate (BL)}
 \item{cxr_lung_cavitation_bl}{Lung Cavitation on X-Ray (BL)}
-\item{strep_resistance_6m}{Strep Resistance (6M)}
-\item{radiologic_outcome_6m}{Radiologic Outcome (6M)}
-\item{chest_xray_rating_6m}{Chest X-Ray Numeric Rating (6M)}
-\item{radiologic_improvement_6m}{Radiologic Improvement (6M)}
+\item{strep_resistance_6m}{Strep Resistance - Numeric (6M)}
+\item{strep_resistance_f_6m}{Strep Resistance (6M)}
+\item{radiologic_outcome_6m}{Radiologic Outcome - Numeric(6M)}
+\item{radiologic_outcome_f_6m}{Radiologic Outcome (6M)}
+\item{radiologic_improvement_6m}{Radiologic Improvement - Binary (6M)}
 \item{radiologic_improvement_f_6m}{Radiologic Improvement (6M)}
 }
 }

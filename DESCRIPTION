@@ -1,9 +1,15 @@
 Package: examplercts
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: Ready-to-use Data from Randomized Controlled Trials
+Version: 1.0.0.0000
+Authors@R: c(
+    person("Josh", "Betz", , "jbetz@jhu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4488-9799"))
+  )
+Maintainer: Josh Betz <jbetz@jhu.edu>
+Description: This package provides relatively ready-to-analyze data from 
+  randomized controlled trials for use in teaching and software development.
+  All data is retrieved from other sources and processed to make it ready to
+  use, including variable labels and data dictionaries.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

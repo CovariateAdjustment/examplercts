@@ -7,16 +7,17 @@
 \format{
 \subsection{\code{botox_dystonia}}{
 
-A data frame with 545 rows and 9 columns:
+A data frame with 545 rows and 10 columns:
 \describe{
 \item{participant_id}{Participant ID}
 \item{site}{Site ID}
-\item{age}{Age at Baseline}
+\item{age_bl}{Age at Baseline (BL)}
 \item{sex}{Sex}
 \item{arm}{Study Arm}
 \item{tx}{Treatment Indicator}
 \item{twstrs_bl}{TWSTRS Total Score (BL)}
 \item{week}{Week Post Randomization}
+\item{week_f}{Week Post Randomization}
 \item{twstrs}{TWSTRS Total Score - Followup}
 }
 }
